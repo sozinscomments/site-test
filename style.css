@@ -1,0 +1,200 @@
+body {
+    background-color: #C0C0C0;
+    margin: 0px;
+  }
+  .header {
+    background-color: #dc143c;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title-row {
+    margin-top: 42px;
+    margin-bottom: 21px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Work Sans';
+    display: inline;
+    color: #000000;
+  }
+  .instructions-title {
+  
+  }
+  
+  .instructions-row {
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 50px;
+    width: 900px;
+    background-color: #a9a9a9;
+    line-height: 2;
+    border: 5px solid #dc143c;
+    border-radius: 12px;
+  }
+  .instructions-subtitle {
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #c0c0c0;
+    line-height: 2;
+    border-top: 3px solid #dc143c;
+    border-bottom: 3px solid #dc143c;
+  }
+  .instructions-number {
+    padding-right: 25px;
+    font-family: 'Work Sans';
+    font-size: 36px;
+    color: #000000;
+  }
+  
+  .instructions-text {
+    padding: 10px;
+    font-family: "Work Sans";
+    font-size: 24px;
+    color: #000000;
+  }
+  
+/*  .door-frame {
+    cursor: pointer;
+    padding: 10px;
+  }
+  .door-row {
+    text-align: center;
+  }
+  .start-row {
+    margin: auto;
+    width: 120px;
+    height: 43px;
+    font-family: 'Work Sans';
+    background-color: #eb6536;
+    padding-top: 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #010165;
+    margin-bottom: 21px;
+    cursor: pointer;
+  
+  }*/
+
+  .image {
+    margin-left: -800px;
+    border: 10px solid #dc143c;
+    border-radius: 12px;
+  }
+  .question {
+    margin: 75px;
+    margin-left: 150px;
+    text-align: left;
+    font-family: "Work sans";
+    width: 750px;
+  }
+  .buff {
+    padding: 10px;
+    margin-top: -15px;
+    margin-left: 25px;
+    line-height: 1;
+    font-weight: lighter;
+    cursor: pointer;
+    background-color: #a9a9a9;
+    border: 2px solid #dc143c;
+    border-radius: 20px;
+  }
+  .question-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  .donebutton {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+    width: 250px;
+    padding: 30px 0;
+    font-family: 'Work Sans';
+    background-color: #dc143c;
+    border: 6px solid black;
+    border-radius: 50px;
+    display: none;
+    cursor: pointer;
+  }
+  .addedspace {
+    padding: 50px;
+  }
+  .table2 {
+    display: none;
+    border-style: ridge;
+    border-width: 50px;
+    border-color: #dc143c;
+  }
+  .tableParagraph {
+    margin: 25px;
+    margin-left: 150px;
+    text-align: left;
+    font-family: "Work sans";
+    width: 750px;
+    font-size: 30px;
+  }
+  .tableParagraph2 {
+    margin: 25px;
+    margin-left: 100px;
+    text-align: left;
+    font-family: "Work sans";
+    width: 750px;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+  #title-row2 {
+    display: none;
+    text-align: center;
+    font-family: 'Work Sans';
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    padding: 50px;
+    width: 900px;
+    background-color: #a9a9a9;
+    line-height: 2;
+    border: 5px solid #dc143c;
+    border-radius: 12px;
+  }
+  .table3 {
+    display: none;
+    border-style: ridge;
+    border-width: 50px;
+    border-color: #dc143c96;
+  }
+  #showMoreButton {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    width: 250px;
+    padding: 30px 0;
+    font-family: 'Work Sans';
+    background-color: #dc143c;
+    border: 6px solid black;
+    border-radius: 50px;
+    display: none; 
+    cursor: pointer;
+  }
+  .moreImages {
+    border: 10px solid #dc143c;
+    border-radius: 12px;
+  }
+  .moreImages2 {
+    border: 10px solid #dc143c96;
+    border-radius: 12px;
+  }
+  .clubBorder {
+    border: 10px solid #dc143c;
+    border-radius: 12px;
+  }
+  .clubBorder2 {
+    border: 10px solid #dc143c96;
+    border-radius: 12px;
+  }

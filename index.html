@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClubHub UHS</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./Attempt-1.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./Attempt-1.png" width=400px>
+    </div>
+    <div class='title-row'>
+      <!--img src="https://content.codecademy.com/projects/chore-door/images/star.svg"-->
+      <p class="instructions-title">The Center for Student Club Info</p>
+      <!--img src="https://content.codecademy.com/projects/chore-door/images/star.svg"-->
+    </div>
+    <div class="title-row">
+      <p class='instructions-row' width="100%" border="0" cellspacing="0" cellpadding="0">Answer a few questions about your interests (not knowledge or talent). The site will rank clubs in its database based on your selection and provide you with more information to get involved! ClubHub makes it easy and convenient to try new things around school.</p>
+      <p class="quiz-title">Heres a Few Questions to Get Started!</p>
+      <p class="instructions-subtitle">Each question ranks an aspect from 1 to 5 based on interest</p>
+    </div>
+    <table id = "table1" class = "table" style="width:100%">
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">1. How do you feel about math?</p>
+            <div class="first-question-options">
+              <p class= "buff" id="oneone">A) The extent to which I hate math is simply unfathomable</p>
+              <p class="buff" id="onetwo">B) Not really a fan, gotta say</p>
+              <p class= "buff" id="onethree">C) Not my favorite, but I can deal with it</p>
+              <p class= "buff" id="onefour">D) It's pretty cool, I'd call myself a math enjoyer</p>
+              <p class= "buff" id="onefive">E) I'm a big math fan</p>
+            </div>
+            <!--img id="door1" class='door-frame' src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+            <img id="door2" class='door-frame' src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg">
+            <img id="door3" class='door-frame' src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg"-->
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Math.png" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">2. How do you feel about science?</p>
+            <div class="second-question-options">
+              <p class= "buff" id="twoone">A) Get it out of my grad reqs please</p>
+              <p class= "buff" id="twotwo">B) I'm not a big fan</p>
+              <p class= "buff" id="twothree">C) Some stuffs cool, its whatever I guess</p>
+              <p class= "buff" id="twofour">D) A lot of those science things are pretty cool</p>
+              <p class= "buff" id="twofive">E) Call me Bill Nye...cause I'm a science guy B)</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Science.png" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">3. What are your opinions on computer science (coding, cyber security, etc.)?</p>
+            <div class="third-question-options">
+              <p class= "buff" id="threeone">A) I simply do not like it</p>
+              <p class= "buff" id="threetwo">B) Not a big interest of mine</p>
+              <p class= "buff" id="threethree">C) Seems interesting, idk</p>
+              <p class= "buff" id="threefour">D) I think its pretty cool</p>
+              <p class= "buff" id="threefive">E) Its a major passion of mine</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Coding.png" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">4. Are you a fan of volunteering and community service?</p>
+            <div class="fourth-question-options">
+              <p class= "buff" id="fourone">A) So glad its not required anymore</p>
+              <p class="buff" id="fourtwo">B) Definitely good, not sure if I'm that interested</p>
+              <p class= "buff" id="fourthree">C) Its pretty cool from time to time</p>
+              <p class="buff" id="fourfour">D) I like volunteering</p>
+              <p class= "buff" id="fourfive">C) Give me something to do or I'll find it myself</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Volunteering.jpg" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">5. Would you consider yourself a casual club sports sorta person?</p>
+            <div class="fifth-question-options">
+              <p class= "buff" id="fiveone">A) Ew</p>
+              <p class= "buff" id="fivetwo">B) Not the biggest fan</p>
+              <p class= "buff" id="fivethree">C) Pretty neat I guess, I might be interested</p>
+              <p class= "buff" id="fivefour">D) Club sports can be pretty cool</p>
+              <p class= "buff" id="fivefive">E) Certified club sports enthusiast</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Pingpong.png" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">6. Do you like trivia?</p>
+            <div class="sixth-question-options">
+              <p class= "buff" id="sixone">A) It's just a chance for people without lives to flex on us normal people</p>
+              <p class= "buff" id="sixtwo">B) Its not thaaaat bad</p>
+              <p class= "buff" id="sixthree">C) I'd say I'm a causual trivia enjoyer</p>
+              <p class= "buff" id="sixfour">D) Trivia is pretty neat</p>
+              <p class= "buff" id="sixfive">E) Trivia is super fun</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Jeopardy.jpg" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">7. Do you like social clubs?</p>
+            <div class="seventh-question-options">
+              <p class= "buff" id="sevenone">A) Honestly the less talking the better</p>
+              <p class = "buff" id="seventwo">B) I can handle it here and there, but I don't want too much</p>
+              <p class= "buff" id="seventhree">C) I'm all for some interaction mixed in with what I'm there for</p>
+              <p class= "buff" id="sevenfour">D) The social focus definitely enhances the experience</p>
+              <p class= "buff" id="sevenfive">E) Social interaction IS the interest (or at least part of it)</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Social.jpg" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">8. Do you like team problem solving?</p>
+            <div class="eighth-question-options">
+              <p class= "buff" id="eightone">A) I don't need others diluting my process</p>
+              <p class= "buff" id="eighttwo">B) It's nice to have some team input, but I value my individual process more</p>
+              <p class= "buff" id="eightthree">C) Its good to incoorperate team ideas, but i don't want to do it constantly</p>
+              <p class = "buff" id="eightfour">D) Its good to constantly build on each others' ideas</p>
+              <p class= "buff" id="eightfive">E) What's life without tackling problems together?</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Teamwork.jpg" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">9. How do you feel about music?</p>
+            <div class="ninth-question-options">
+              <p class= "buff" id="nineone">A) Not the biggest fan</p>
+              <p class= "buff" id="ninetwo">B) Theres a bit of good stuff</p>
+              <p class= "buff" id="ninethree">C) Sure, music is neat</p>
+              <p class= "buff" id="ninefour">D) I am definitely a strong music enjoyer</p>
+              <p class= "buff" id="ninefive">E) I live and breathe music</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Music.jpg" style="width:400px">
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <div class="question">
+            <p class="question-title">10. Are you a diversity/multiculturalism enthusiast?</p>
+            <div class="tenth-question-options">
+              <p class= "buff" id="tenone">A) Eh, not something I need to persue in a club</p>
+              <p class= "buff" id="tentwo">B) I wouldn't say enthusiast, but I'd dabble</p>
+              <p class= "buff" id="tenthree">C) Pretty cool, I could see myself involved in some of that</p>
+              <p class="buff" id="tenfour">D) I have a considerable level of enthusiasm, I must say</p>
+              <p class= "buff" id="tenfive">E) YES, absolutely</p>
+            </div>
+          </div>
+        </th>
+        <th class="image-column">
+          <img class="image" src="./Diversity.jpg" style="width:400px">
+        </th>
+      </tr>
+    </table>
+    <div>
+      <p id = "button1" class="donebutton">See Results!</p>
+    </div>
+    
+    <div>
+      <p id='title-row2' width="100%">Here are the suggestions, ranked in order of relevance. Club contacts are people who have volunteered to field any questions about the club, so reach out to them if you want to know where to start!</p>
+    </div>
+
+    <table id = "table2" class = "table2" style="width:100%">
+      <tr>
+        <th class="clubBorder">
+            <p id = "paragraph1" class="tableParagraph"></p>
+            <p id = "paragraph12" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image1" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph2" class="tableParagraph"></p>
+          <p id = "paragraph22" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image2" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph3" class="tableParagraph"></p>
+          <p id = "paragraph32" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image3" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph4" class="tableParagraph"></p>
+          <p id = "paragraph42" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image4" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph5" class="tableParagraph"></p>
+          <p id = "paragraph52" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image5" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph6" class="tableParagraph"></p>
+          <p id = "paragraph62" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image6" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph7" class="tableParagraph"></p>
+          <p id = "paragraph72" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image7" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph8" class="tableParagraph"></p>
+          <p id = "paragraph82" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages"  id = "image8" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph9" class="tableParagraph"></p>
+          <p id = "paragraph92" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image9" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder">
+          <p id = "paragraph10" class="tableParagraph"></p>
+          <p id = "paragraph102" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages" id = "image10" style="width:440px">
+        </th>
+      </tr>
+    </table>
+    <div>
+      <p id="showMoreButton">Load More</p>
+    </div>
+    <table id = "table3" class = "table3" style="width:100%">
+      <tr>
+        <th class="clubBorder2">
+          <p id = "paragraph11" class="tableParagraph"></p>
+          <p id = "paragraph112" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages2" id = "image11" style="width:440px">
+        </th>
+      </tr>
+      <tr>
+        <th class="clubBorder2">
+          <p id = "paragraphtwelve" class="tableParagraph"></p>
+          <p id = "paragraph122" class="tableParagraph2"></p>
+        </th>
+        <th>
+          <img class= "moreImages2" id = "image12" style="width:440px">
+        </th>
+      </tr>
+    </table>
+    <div>
+      <p class="addedspace"></p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
